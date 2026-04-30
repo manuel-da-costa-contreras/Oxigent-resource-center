@@ -48,6 +48,17 @@
   padding: 0 14px;
 }
 
+.tt-field input:focus-visible,
+.tt-field select:focus-visible,
+.tt-clear:focus-visible,
+.tt-card__open:focus-visible,
+.tt-modal__close:focus-visible,
+.tt-modal__content a:focus-visible {
+  outline: 3px solid #0a66cc;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 2px rgba(10, 102, 204, 0.2);
+}
+
 .tt-results {
   margin: 12px 0 16px;
 }
@@ -129,3 +140,28 @@
   background: transparent;
   font-size: 20px;
 }
+
+@media (max-width: 900px) {
+  .tt-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 768px) {
+  .tt-resource-center {
+    padding: 16px;
+  }
+  .tt-filters {
+    grid-template-columns: 1fr;
+  }
+  .tt-clear {
+    width: 100%;
+  }
+  .tt-grid {
+    grid-template-columns: 1fr;
+  }
+  .tt-modal__content {
+    margin-top: 48px;
+  }
+}
+
+/*# sourceMappingURL=resource-center.css.map */

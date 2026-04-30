@@ -11,12 +11,12 @@
     <div class="tt-filters" role="search">
         <label class="tt-field">
             <span>Buscar</span>
-            <input id="js-resource-search" type="text" placeholder="Titulo o resumen" />
+            <input id="js-resource-search" type="text" placeholder="Titulo o resumen" aria-label="Buscar recursos por titulo o resumen" />
         </label>
 
         <label class="tt-field">
             <span>Categoria</span>
-            <select id="js-resource-category">
+            <select id="js-resource-category" aria-label="Filtrar recursos por categoria">
                 <option value="all">Todas</option>
                 <option value="Guias">Guias</option>
                 <option value="Plantillas">Plantillas</option>
@@ -24,7 +24,7 @@
             </select>
         </label>
 
-        <button id="js-resource-clear" type="button" class="tt-clear">Limpiar</button>
+        <button id="js-resource-clear" type="button" class="tt-clear" aria-label="Limpiar filtros de busqueda">Limpiar</button>
     </div>
 
     <p class="tt-results">
@@ -38,13 +38,13 @@
         <p>Prueba con otro texto o categoria.</p>
     </div>
 
-    <div id="js-resource-modal" class="tt-modal" hidden aria-hidden="true" role="dialog" aria-labelledby="js-modal-title">
+    <div id="js-resource-modal" class="tt-modal" hidden aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="js-modal-title">
         <div class="tt-modal__overlay js-close-modal"></div>
         <article class="tt-modal__content">
-            <button type="button" class="tt-modal__close js-close-modal" aria-label="Cerrar detalle">x</button>
+            <button type="button" class="tt-modal__close js-close-modal" aria-label="Cerrar detalle del recurso">x</button>
             <h3 id="js-modal-title"></h3>
             <p id="js-modal-summary"></p>
-            <a id="js-modal-link" href="#" target="_blank" rel="noopener noreferrer">Abrir recurso</a>
+            <a id="js-modal-link" href="#" target="_blank" rel="noopener noreferrer" aria-label="Abrir recurso en una nueva pestana">Abrir recurso</a>
         </article>
     </div>
 </section>
