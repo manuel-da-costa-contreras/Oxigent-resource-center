@@ -1,0 +1,62 @@
+@{
+    ViewData["Title"] = "Technical Test - Resource Center";
+}
+
+<section class="tt-resource-center" id="js-resource-center">
+    <header class="tt-header">
+        <h1 class="tt-title">Resource Center</h1>
+        <p class="tt-subtitle">Busca y revisa recursos internos.</p>
+    </header>
+
+    <div class="tt-filters" role="search">
+        <label class="tt-field">
+            <span>Buscar</span>
+            <input id="js-resource-search" type="text" placeholder="Titulo o resumen" />
+        </label>
+
+        <label class="tt-field">
+            <span>Categoria</span>
+            <select id="js-resource-category">
+                <option value="all">Todas</option>
+                <option value="Guias">Guias</option>
+                <option value="Plantillas">Plantillas</option>
+                <option value="Videos">Videos</option>
+            </select>
+        </label>
+
+        <button id="js-resource-clear" type="button" class="tt-clear">Limpiar</button>
+    </div>
+
+    <p class="tt-results">
+        Resultados: <strong id="js-total-count">0</strong>
+    </p>
+
+    <div id="js-resource-grid" class="tt-grid" aria-live="polite"></div>
+
+    <div id="js-resource-empty" class="tt-empty" hidden>
+        <h2>No hay resultados</h2>
+        <p>Prueba con otro texto o categoria.</p>
+    </div>
+
+    <div id="js-resource-modal" class="tt-modal" hidden aria-hidden="true" role="dialog" aria-labelledby="js-modal-title">
+        <div class="tt-modal__overlay js-close-modal"></div>
+        <article class="tt-modal__content">
+            <button type="button" class="tt-modal__close js-close-modal" aria-label="Cerrar detalle">x</button>
+            <h3 id="js-modal-title"></h3>
+            <p id="js-modal-summary"></p>
+            <a id="js-modal-link" href="#" target="_blank" rel="noopener noreferrer">Abrir recurso</a>
+        </article>
+    </div>
+</section>
+
+<script>
+    window.resourceCenterData = @Html.Raw(ViewBag.ResourceCenterData ?? "[]");
+</script>
+
+@section Stylesheets {
+    <link rel="stylesheet" href="~/technical-test/resource-center.css" asp-append-version="true" />
+}
+
+@section Scripts {
+    <script src="~/technical-test/resource-center.js" asp-append-version="true"></script>
+}

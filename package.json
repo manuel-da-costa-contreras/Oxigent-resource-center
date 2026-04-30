@@ -1,0 +1,12 @@
+{
+  "name": "resource-center-interview",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "scss:build": "sass --no-source-map wwwroot/technical-test/resource-center.scss wwwroot/technical-test/resource-center.css",
+    "scss:watch": "sass --watch wwwroot/technical-test/resource-center.scss:wwwroot/technical-test/resource-center.css"
+  },
+  "devDependencies": {
+    "sass": "^1.69.7"
+  }
+}

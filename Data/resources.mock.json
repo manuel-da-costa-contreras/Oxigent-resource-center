@@ -1,0 +1,58 @@
+[
+  {
+    "id": 101,
+    "title": "Guia de publicacion de ofertas para perfiles IT",
+    "summary": "Checklist rapido para evitar errores frecuentes en publicaciones nuevas.",
+    "category": "Guias",
+    "url": "https://example.test/resource/101"
+  },
+  {
+    "id": 102,
+    "title": "Plantilla de feedback para hiring manager",
+    "summary": "Formato recomendado para feedback consistente en entrevistas.",
+    "category": "Plantillas",
+    "url": "https://example.test/resource/102"
+  },
+  {
+    "id": 103,
+    "title": "Video corto de onboarding para nuevos recruiters",
+    "summary": "",
+    "category": "Videos",
+    "url": "https://example.test/resource/103"
+  },
+  {
+    "id": 104,
+    "title": "Guia de uso de filtros avanzados en ATS con un titulo intencionalmente muy largo para probar cortes de linea y comportamiento responsive en tarjetas",
+    "summary": "Incluye ejemplos practicos de busqueda por ubicacion, seniority y stack tecnico.",
+    "category": "Guias",
+    "url": "https://example.test/resource/104"
+  },
+  {
+    "id": 105,
+    "title": "FAQ interna de soporte",
+    "summary": null,
+    "category": "Ayuda",
+    "url": "https://example.test/resource/105"
+  },
+  {
+    "id": 106,
+    "title": "Plantilla de mensaje para rechazos",
+    "summary": "Modelos de comunicacion para mantener tono claro y respetuoso.",
+    "category": "Plantillas",
+    "url": "https://example.test/resource/106"
+  },
+  {
+    "id": 107,
+    "title": "Resumen semanal de metricas",
+    "summary": "Bloque de metricas clave para seguimiento operativo.",
+    "category": "Reportes",
+    "url": "https://example.test/resource/107"
+  },
+  {
+    "id": 108,
+    "title": "Video de buenas practicas de entrevistas",
+    "summary": "Sesion de 15 minutos con recomendaciones de evaluacion.",
+    "category": "Videos",
+    "url": "https://example.test/resource/108"
+  }
+]
